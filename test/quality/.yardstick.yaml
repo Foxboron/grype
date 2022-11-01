@@ -40,13 +40,19 @@ result-sets:
         - name: syft
           # note: we want to use a fixed version of syft for capturing all results (NOT "latest")
           version: 1b69fbd566e706a887fafdba8d436f3728bf60bd
-          produces: SBOM
+          produces: sbom-new
+          refresh: false
+
+        - name: syft
+          # note: we want to use a fixed version of syft for capturing all results (NOT "latest")
+          version: v0.59.0
+          produces: sbom-old
           refresh: false
 
         - name: grype
           version: git:current-commit
-          takes: SBOM
+          takes: sbom-new
 
         - name: grype
           version: latest
-          takes: SBOM
+          takes: sbom-old
