@@ -37,7 +37,7 @@ result-sets:
 
         - name: syft
           # note: we want to use a fixed version of syft for capturing all results (NOT "latest")
-          version: v0.54.0
+          version: 1b69fbd566e706a887fafdba8d436f3728bf60bd
           produces: SBOM
           refresh: false
 
