@@ -25,7 +25,7 @@ x-ref:
 
 # new vulnerabilities are added all of the time, instead of keeping up it's easier to ignore newer entries.
 # This approach helps tremendously with keeping the analysis relatively stable.
-default_max_year: 2020
+default_max_year: 2021
 
 result-sets:
   pr_vs_latest_via_sbom:
