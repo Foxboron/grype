@@ -1,3 +1,3 @@
-git+https://github.com/anchore/yardstick@9ceaaeb7054ba2894bdd83988576869084fe8fd4
+git+https://github.com/anchore/yardstick@main
 # ../../../yardstick
 tabulate==0.8.10
